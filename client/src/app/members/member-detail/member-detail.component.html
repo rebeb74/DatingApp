@@ -17,11 +17,11 @@
         </div>
         <div>
           <strong>Last Avtive:</strong>
-          <p>{{ member.lastActive }}, {{ member.country }}</p>
+          <p>{{ member.lastActive | timeago }}</p>
         </div>
         <div>
           <strong>Member since:</strong>
-          <p>{{ member.created }}, {{ member.country }}</p>
+          <p>{{ member.created | date: 'dd MMMM yyyy'}}</p>
         </div>
         <div class="card-footer">
           <div class="btn-group d-flex">
